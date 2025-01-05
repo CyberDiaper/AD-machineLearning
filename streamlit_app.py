@@ -8,3 +8,7 @@ with st.expander('Data'):
   st.write('**Raw data**')
   df = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/refs/heads/master/penguins.csv')
   df 
+
+st.write('**X**')
+X = df.drop('species', axis=1)
+
